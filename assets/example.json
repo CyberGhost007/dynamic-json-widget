@@ -1,0 +1,80 @@
+{
+  "widget": "Column",
+  "children": [
+    {
+      "widget": "Text",
+      "data": "This is a column"
+    },
+    {
+      "widget": "Container",
+      "padding": 16.0,
+      "color": "#FFDDC1",
+      "child": {
+        "widget": "Text",
+        "data": "This is a container"
+      }
+    },
+    {
+      "widget": "Row",
+      "children": [
+        {
+          "widget": "Button",
+          "text": "Button 1",
+          "actionString": "/showSnackbar",
+          "extras": {
+            "message": "Button 1 clicked!"
+          }
+        },
+        {
+          "widget": "Button",
+          "text": "Button 2",
+          "actionString": "/showSnackbar",
+          "extras": {
+            "message": "Button 2 clicked!"
+          }
+        }
+      ]
+    },
+    {
+      "widget": "TextField",
+      "labelText": "Enter your name",
+      "hintText": "Name",
+      "border": "underline"
+    },
+    {
+      "widget": "DynamicTextField",
+      "initialText": "Enter your name",
+      "textFieldDecoration": {
+        "labelText": "Name",
+        "hintText": "Enter your name"
+      }
+    },
+    {
+      "widget": "Container",
+      "padding": 16.0,
+      "color": "#C1E1FF",
+      "child": {
+        "widget": "Column",
+        "children": [
+          {
+            "widget": "Text",
+            "data": "Nested Column"
+          },
+          {
+            "widget": "Row",
+            "children": [
+              {
+                "widget": "Text",
+                "data": "Row item 1"
+              },
+              {
+                "widget": "Text",
+                "data": "Row item 2"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
